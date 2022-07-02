@@ -137,6 +137,8 @@ address {
     background-color: var(--color-choice);
     padding-bottom: 200px;
     padding-top: 200px;
+    max-width: 1600px;
+    background-image: url(../images/Img14.jpg);
 }
 .main-list {
     display: flex;
@@ -470,3 +472,5 @@ margin-left: calc(-1 * var(--cardset-gap));
     border-bottom: solid 1px var(--border-color);
     border-left: solid 1px var(--border-color);
 }
+
+/* icon */
