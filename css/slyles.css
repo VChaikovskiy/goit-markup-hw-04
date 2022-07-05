@@ -17,6 +17,8 @@
     --button-radius:4px 4px 4px 4px;
     --border-color:#EEEEEE;
     --border-color-nav:#ECECEC;
+    --backgroung-color-hero:#C4C4C4;
+    --fill-icon-socials: #AFB1B8;
 }
 
 body {
@@ -138,7 +140,13 @@ address {
     padding-bottom: 200px;
     padding-top: 200px;
     max-width: 1600px;
-    background-image: url(../images/Img14.jpg);
+    background-image: linear-gradient( rgba(47,48,58,0.4) 40%, rgba(47,48,58,0.4) 40%), 
+    url(../images/Img14.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid var(--color-logo);
+    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
 }
 .main-list {
     display: flex;
@@ -483,6 +491,10 @@ margin-left: calc(-1 * var(--cardset-gap));
     height: 120px;
     margin-bottom: 30px;
     border: 1px solid transparent;
+    /* border-radius: var(--box-radius); */
+    /* box-shadow: 0px 4px 4px; */
+}
+.icon-box:hover {
     border-radius: var(--box-radius);
     box-shadow: 0px 4px 4px;
 }
@@ -509,4 +521,44 @@ margin-left: calc(-1 * var(--cardset-gap));
 }
 .header-list:hover .icon-header-smartphhone {
     fill: var(--color-blue);
+}
+.client-container {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.2;
+        color: var(--heder-list);
+        letter-spacing: 0.03em;
+        display: block;
+        text-align: center;
+        margin: auto;
+}
+.socials {
+    /* display: block;
+    flex-wrap: wrap;
+    flex-basis: calc(100%/4 - var(--cardset-gap)); */
+}
+.socials-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: calc(100%/4 - var(--cardset-gap));
+    justify-content: center;
+    align-items: center;
+}
+.socials-item {
+    width: 44px;
+    height: 44px;
+    margin-bottom: 30px;
+    fill:var(--fill-icon-socials);
+}
+.socials-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.socials-item:hover {
+    background-color: var(--color-blue);
+    border-radius: 100%;
+    fill: white;
 }
